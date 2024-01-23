@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container_header">
+            <div class="logo">
+                <button class="logo__button" id="loko_boton" onclick="show_menu()">
+                    <img src="img/logo.svg" alt="" class="logo-img">
+                </button>
+
+                <div class="logo__menu">
+                    <ul class="logo__list">
+
+                        <li class="logo__item">
+                            <img class="logo__btn_light" src="img/light.png" onclick="changelight()" alt="">
+                            <p class="logo__discription">light mode</p>
+                        </li>
+
+
+                        <li class="logo__item">
+                            <img class="logo__btn_dark" src="img/dark.png" onclick="changedark()" alt="">
+                            <p class="logo__discription">dark mode</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item" name="123">
+                        <a href="#" class="nav_link">
+                            main
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            characters
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            gameplay
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="second_page.html" class="nav_link">
+                            maps
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="video_bg">
+            <video id='video-bg' autoplay loop muted>
+                <source src="video/Tom Clancy’s Rainbow Six Siege - The Playbook (720p).mp4" type="video/mp4">
+            </video>
+            <div class="video_content">
+                <button onclick="play_v()"  class='video_btn'><img  id='play' class="controls_img" src="img/icons8-play-50.png" alt=""></button>
+                <button onclick="mute_v()" class='video_btn'><img  id="mutev" class="controls_img" src="img/icons8-mute-50.png" alt=""></button>
+                <button onclick="prev()" class='video_btn'><img class="controls_img prev_img" src="img/icons8-next-48.png" alt=""></button>
+                <button onclick="next()" class='video_btn'><img class="controls_img" src="img/icons8-next-48.png" alt=""></button>
+            </div>
+        </div>
+        <section class="product">
+            
+            <div class="container product__container">
+                <h1 class="product__title">Rainbow six siege</h1>
+                <div class="product__content">
+
+
+                    <img src="https://assetsio.reedpopcdn.com/rainbow-six-siege-review-1449128668194.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
+                        alt="" class="product__image">
+
+                    <div class="product__info">
+                        <img src="img/raibow six 1.jpg" alt="" class="r6_def">
+
+
+                        <p class="product__discription">
+                            rainbow six seage is a strategic game,there are lot of
+                            operators so you can pick your playstyle(heavy,shealth,control...)
+
+                        </p>
+                        <span class="product__price">cost:20$</span>
+                        <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/">
+                            <button class="product__btn" type="button" id="click_to_buy">buy game</button>
+                        </a>
+                    </div>
+                </div>
+                <section class="sales">
+
+                    <div class="itc-slider" data-slider="itc-slider">
+                        <div class="itc-slider-wrapper">
+                            <div class="itc-slider-items">
+                                <div class="itc-slider-item">
+                                    <img src="img/r6 defenders.webp" alt="" class="r6slide">
+                                </div>
+                                <div class="itc-slider-item">
+                                    <img src="img/r6 attackers.webp" alt="" class="r6slide">
+                                </div >
+
+                            </div>
+                        </div>
+                        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                        <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                        <button class="itc-slider-btn itc-slider-btn-next"></button>
+                    </div>
+                    <div class="product__basket">
+                        <p>products in basket:</p>
+                        <img src="img/basket.png" alt="">
+                    </div>
+                </section>
+                
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+        </footer>
+    </div>
+    <script src="js/itc-slider.js"></script>
+    <script src="js/logo-menu.js"></script>
+    <script src="js/dark-light.js"></script>
+    <script src="js/control.js"></script>
+</body>
+
+</html>
